@@ -1,0 +1,274 @@
+<html lang="en">
+  <head>
+      
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Painting Knight</title>
+  </head>
+  <body>
+      <div id = "start">
+          <p id = "instruction"> Click on a Field on the board to move the "Painting Knight". The Knight can only move by the rules of regular Chess. The Knight will paint the Field he moves to Red. If the Knight moves to a field which is already red, he will wash the paint off. your Goal is to paint the entire board red.</p>
+        <p>If the game does not display properly or does not work, try disabling your adblock.</p>
+          <button onclick = "newtry()">Start</button>
+      </div>
+
+      <div id="win">
+          <p>You have won with w moves.</p>
+      </div>
+
+      <section>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+  
+          <div class = "fake"></div>
+  
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+  
+          <div class = "fake"></div>
+  
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+  
+          <div class = "fake"></div>
+  
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+  
+          <div class = "fake"></div>
+  
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+  
+          <div class = "fake"></div>
+  
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+  
+          <div class = "fake"></div>
+  
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+  
+          <div class = "fake"></div>
+  
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+  
+          <div class = "fake"></div>
+      </section>
+      
+      <section id = "red">
+          <div class = "paint" id = "rd11"></div>
+          <div class = "paint" id = "rd12"></div>
+          <div class = "paint" id = "rd13"></div>
+          <div class = "paint" id = "rd14"></div>
+          <div class = "paint" id = "rd15"></div>
+          <div class = "paint" id = "rd16"></div>
+          <div class = "paint" id = "rd17"></div>
+          <div class = "paint" id = "rd18"></div>
+  
+          <div class = "paint" id = "rd21"></div>
+          <div class = "paint" id = "rd22"></div>
+          <div class = "paint" id = "rd23"></div>
+          <div class = "paint" id = "rd24"></div>
+          <div class = "paint" id = "rd25"></div>
+          <div class = "paint" id = "rd26"></div>
+          <div class = "paint" id = "rd27"></div>
+          <div class = "paint" id = "rd28"></div>
+  
+          <div class = "paint" id = "rd31"></div>
+          <div class = "paint" id = "rd32"></div>
+          <div class = "paint" id = "rd33"></div>
+          <div class = "paint" id = "rd34"></div>
+          <div class = "paint" id = "rd35"></div>
+          <div class = "paint" id = "rd36"></div>
+          <div class = "paint" id = "rd37"></div>
+          <div class = "paint" id = "rd38"></div>
+      
+          <div class = "paint" id = "rd41"></div>
+          <div class = "paint" id = "rd42"></div>
+          <div class = "paint" id = "rd43"></div>
+          <div class = "paint" id = "rd44"></div>
+          <div class = "paint" id = "rd45"></div>
+          <div class = "paint" id = "rd46"></div>
+          <div class = "paint" id = "rd47"></div>
+          <div class = "paint" id = "rd48"></div>
+  
+          <div class = "paint" id = "rd51"></div>
+          <div class = "paint" id = "rd52"></div>
+          <div class = "paint" id = "rd53"></div>
+          <div class = "paint" id = "rd54"></div>
+          <div class = "paint" id = "rd55"></div>
+          <div class = "paint" id = "rd56"></div>
+          <div class = "paint" id = "rd57"></div>
+          <div class = "paint" id = "rd58"></div>
+  
+          <div class = "paint" id = "rd61"></div>
+          <div class = "paint" id = "rd62"></div>
+          <div class = "paint" id = "rd63"></div>
+          <div class = "paint" id = "rd64"></div>
+          <div class = "paint" id = "rd65"></div>
+          <div class = "paint" id = "rd66"></div>
+          <div class = "paint" id = "rd67"></div>
+          <div class = "paint" id = "rd68"></div>
+  
+          <div class = "paint" id = "rd71"></div>
+          <div class = "paint" id = "rd72"></div>
+          <div class = "paint" id = "rd73"></div>
+          <div class = "paint" id = "rd74"></div>
+          <div class = "paint" id = "rd75"></div>
+          <div class = "paint" id = "rd76"></div>
+          <div class = "paint" id = "rd77"></div>
+          <div class = "paint" id = "rd78"></div>
+  
+          <div class = "paint" id = "rd81"></div>
+          <div class = "paint" id = "rd82"></div>
+          <div class = "paint" id = "rd83"></div>
+          <div class = "paint" id = "rd84"></div>
+          <div class = "paint" id = "rd85"></div>
+          <div class = "paint" id = "rd86"></div>
+          <div class = "paint" id = "rd87"></div>
+          <div class = "paint" id = "rd88"></div>
+  
+      </section>
+      
+      <section id = "fakeboard"> 
+          <div id = "knight">
+            <img src = "https://files.slack.com/files-pri/T012SCGNEA3-F015U8RDR7S/pferd.png?pub_secret=df1e5e5b12">
+          </div>
+      </section>
+      
+      <section id = "board">
+          
+          <div class = "play" onclick = "x1(), y1(), myfunction()">1</div>
+          <div class = "play" onclick = "x1(), y2(), myfunction()">2</div>
+          <div class = "play" onclick = "x1(), y3(), myfunction()">3</div>
+          <div class = "play" onclick = "x1(), y4(), myfunction()">4</div>
+          <div class = "play" onclick = "x1(), y5(), myfunction()">5</div>
+          <div class = "play" onclick = "x1(), y6(), myfunction()">6</div>
+          <div class = "play" onclick = "x1(), y7(), myfunction()">7</div>
+          <div class = "play" onclick = "x1(), y8(), myfunction()">8</div>
+      
+          <div class = "play" onclick = "x2(), y1(), myfunction()">1</div>
+          <div class = "play" onclick = "x2(), y2(), myfunction()">2</div>
+          <div class = "play" onclick = "x2(), y3(), myfunction()">3</div>
+          <div class = "play" onclick = "x2(), y4(), myfunction()">4</div>
+          <div class = "play" onclick = "x2(), y5(), myfunction()">5</div>
+          <div class = "play" onclick = "x2(), y6(), myfunction()">6</div>
+          <div class = "play" onclick = "x2(), y7(), myfunction()">7</div>
+          <div class = "play" onclick = "x2(), y8(), myfunction()">8</div>
+  
+          <div class = "play" onclick = "x3(), y1(), myfunction()">1</div>
+          <div class = "play" onclick = "x3(), y2(), myfunction()">2</div>
+          <div class = "play" onclick = "x3(), y3(), myfunction()">3</div>
+          <div class = "play" onclick = "x3(), y4(), myfunction()">4</div>
+          <div class = "play" onclick = "x3(), y5(), myfunction()">5</div>
+          <div class = "play" onclick = "x3(), y6(), myfunction()">6</div>
+          <div class = "play" onclick = "x3(), y7(), myfunction()">7</div>
+          <div class = "play" onclick = "x3(), y8(), myfunction()">8</div>
+  
+          <div class = "play" onclick = "x4(), y1(), myfunction()">1</div>
+          <div class = "play" onclick = "x4(), y2(), myfunction()">2</div>
+          <div class = "play" onclick = "x4(), y3(), myfunction()">3</div>
+          <div class = "play" onclick = "x4(), y4(), myfunction()">4</div>
+          <div class = "play" onclick = "x4(), y5(), myfunction()">5</div>
+          <div class = "play" onclick = "x4(), y6(), myfunction()">6</div>
+          <div class = "play" onclick = "x4(), y7(), myfunction()">7</div>
+          <div class = "play" onclick = "x4(), y8(), myfunction()">8</div>
+  
+          <div class = "play" onclick = "x5(), y1(), myfunction()">1</div>
+          <div class = "play"  onclick = "x5(), y2(), myfunction()">2</div>
+          <div class = "play"  onclick = "x5(), y3(), myfunction()">3</div>
+          <div class = "play"  onclick = "x5(), y4(), myfunction()">4</div>
+          <div class = "play"  onclick = "x5(), y5(), myfunction()">5</div>
+          <div class = "play"  onclick = "x5(), y6(), myfunction()">6</div>
+          <div class = "play"  onclick = "x5(), y7(), myfunction()">7</div>
+          <div class = "play"  onclick = "x5(), y8(), myfunction()">8</div>
+  
+          <div class = "play"  onclick = "x6(), y1(), myfunction()">1</div>
+          <div class = "play"  onclick = "x6(), y2(), myfunction()">2</div>
+          <div class = "play"  onclick = "x6(), y3(), myfunction()">3</div>
+          <div class = "play"  onclick = "x6(), y4(), myfunction()">4</div>
+          <div class = "play"  onclick = "x6(), y5(), myfunction()">5</div>
+          <div class = "play"  onclick = "x6(), y6(), myfunction()">6</div>
+          <div class = "play"  onclick = "x6(), y7(), myfunction()">7</div>
+          <div class = "play"  onclick = "x6(), y8(), myfunction()">8</div>
+  
+          <div class = "play"  onclick = "x7(), y1(), myfunction()">1</div>
+          <div class = "play"  onclick = "x7(), y2(), myfunction()">2</div>
+          <div class = "play"  onclick = "x7(), y3(), myfunction()">3</div>
+          <div class = "play"  onclick = "x7(), y4(), myfunction()">4</div>
+          <div class = "play"  onclick = "x7(), y5(), myfunction()">5</div>
+          <div class = "play"  onclick = "x7(), y6(), myfunction()">6</div>
+          <div class = "play"  onclick = "x7(), y7(), myfunction()">7</div>
+          <div class = "play"  onclick = "x7(), y8(), myfunction()">8</div>
+  
+          <div class = "play"  onclick = "x8(), y1(), myfunction()">1</div>
+          <div class = "play"  onclick = "x8(), y2(), myfunction()">2</div>
+          <div class = "play"  onclick = "x8(), y3(), myfunction()">3</div>
+          <div class = "play"  onclick = "x8(), y4(), myfunction()">4</div>
+          <div class = "play"  onclick = "x8(), y5(), myfunction()">5</div>
+          <div class = "play"  onclick = "x8(), y6(), myfunction()">6</div>
+          <div class = "play"  onclick = "x8(), y7(), myfunction()">7</div>
+          <div class = "play"  onclick = "x8(), y8(), myfunction()">8</div>
+  
+      </section>
+  
+      <aside id="aside">
+          <p id="moves">Moves: 0</p>
+          <button id = "reset" onclick = "newtry()">Reset</button>
+      </aside>
+      <script src="app.js"></script>
+  </body>
+</html>
